@@ -17,55 +17,77 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Mathews Basil",
-  "url": "https://mathewsbasil.in/",
-  "image": "https://mathewsbasil.in/logo.png",
-  "jobTitle": "Web Developer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Independent Developer"
-  },
-  "description": "Mathews Basil is a web developer and creator of Timon — an AI-integrated educational web app that helps students collaborate and learn coding efficiently.",
-  "knowsAbout": [
-    "Web Development",
-    "Frontend Development",
-    "Backend Development",
-    "JavaScript",
-    "React",
-    "Node.js",
-    "AI Integration"
-  ],
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Marian College Kuttikkanam"
-  },
-  "sameAs": [
-    "https://github.com/mathews-basil",
-    "https://www.linkedin.com/in/mathews-basil-1aa4a1373/",
-    "https://x.com/mathewsbasil"
-  ],
-  "hasOccupation": {
-    "@type": "Occupation",
-    "name": "Web Developer",
-    "skills": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Express.js",
-      "Git",
-      "AI Tools"
-    ]
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://mathewsbasil.in/"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mathewsbasil.in/#organization",
+      "name": "Mathews Basil",
+      "url": "https://mathewsbasil.in/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://mathewsbasil.in/#logo",
+        "url": "https://mathewsbasil.in/logo.png",
+        "contentUrl": "https://mathewsbasil.in/logo.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Mathews Basil Logo"
+      },
+      "sameAs": [
+        "https://github.com/mathews-basil",
+        "https://www.linkedin.com/in/mathews-basil-1aa4a1373/",
+        "https://x.com/mathewsbasil"
+      ]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://mathewsbasil.in/#website",
+      "url": "https://mathewsbasil.in/",
+      "name": "Mathews Basil — Web Developer",
+      "publisher": {
+        "@id": "https://mathewsbasil.in/#organization"
+      },
+      "inLanguage": "en"
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://mathewsbasil.in/#person",
+      "name": "Mathews Basil",
+      "url": "https://mathewsbasil.in/",
+      "image": "https://mathewsbasil.in/logo.png",
+      "jobTitle": "Web Developer",
+      "description": "Mathews Basil is a web developer and creator of Timon — an AI-integrated educational web app that helps students collaborate and learn coding efficiently.",
+      "worksFor": {
+        "@id": "https://mathewsbasil.in/#organization"
+      },
+      "knowsAbout": [
+        "Web Development",
+        "Frontend Development",
+        "Backend Development",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "AI Integration"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Marian College Kuttikkanam"
+      },
+      "sameAs": [
+        "https://github.com/mathews-basil",
+        "https://www.linkedin.com/in/mathews-basil-1aa4a1373/",
+        "https://x.com/mathewsbasil"
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mathewsbasil.in/"
+      }
+    }
+  ]
 }
 </script>
+
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,8 +95,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="logo.png" type="image/png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="logo.png" />
+
 </head>
 <body>
     <!-- Navigation -->
